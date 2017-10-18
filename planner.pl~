@@ -66,3 +66,4 @@ test :- go([handempty, ontable(b), ontable(c), on(a, b), clear(c), clear(a)],
 test2 :- go([handempty, ontable(b), ontable(c), on(a, b), clear(c), clear(a)],
 	          [handempty, ontable(a), ontable(b), on(c, b), clear(a), clear(c)]).
 
+

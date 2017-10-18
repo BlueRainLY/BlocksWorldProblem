@@ -1,14 +1,7 @@
+% UCF Fall 2017
+% Two-Room planner
+% by Nicolas Lopez and Alexandra Aguirre
 
-%%%%%%%%% Simple Prolog Planner %%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-%%% Based on one of the sample programs in:
-%%%
-%%% Artificial Intelligence:
-%%% Structures and strategies for complex problem solving
-%%%
-%%% by George F. Luger and William A. Stubblefield
-%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 :- module( planner,
 	   [
 	       plan/4,change_state/3,conditions_met/2,member_state/2,
@@ -65,4 +58,3 @@ test :- go([handempty, ontable(b), ontable(c), on(a, b), clear(c), clear(a)],
 
 test2 :- go([handempty, ontable(b), ontable(c), on(a, b), clear(c), clear(a)],
 	          [handempty, ontable(a), ontable(b), on(c, b), clear(a), clear(c)]).
-
